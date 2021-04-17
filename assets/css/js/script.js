@@ -18,7 +18,7 @@ var timer = function() {
             return timeLeft;
         } else {
             timerEl.textContent = "";
-            clearInterval(timeInterval);
+            clearInterval(timeInterval);  
         }
     }, 1000);
     
@@ -35,7 +35,7 @@ var highScores = function() {
     highScoreContainer.className = "hs-container";
     mainEl.appendChild(highScoreContainer);
 
-    // high Score TITLE
+    // high Score title
     var title = document.createElement("h1");
     title.className = "high-score-title";
     title.textContent = "High Scores";
